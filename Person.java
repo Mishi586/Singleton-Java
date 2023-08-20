@@ -1,4 +1,4 @@
-public class PersonEager {
+class PersonEager {
     private static final PersonEager instance = new PersonEager();
 
     private int autoId;
@@ -16,13 +16,12 @@ public class PersonEager {
     public static PersonEager getInstance() {
       if(instance==null)
       {
-        instance = new PersonEager();
-        
+        PersonEager instance = new PersonEager();
     }
 return instance;
 }
 }
-public class Main {
+class Main {
     public static void main(String[] args) {
         // Creating an instance of the class
         PersonEager person = PersonEager.getInstance();
@@ -31,4 +30,3 @@ public class Main {
        
 }
 }
-
